@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib}/**/*'] + ['Rakefile', 'README.md']
   s.test_files = Dir['test/**/*']
 
-  s.add_dependency 'github_api', '~> 0.8.8'
+  s.add_dependency 'github_api'#, '~> 0.8.8'
   unless RUBY_PLATFORM =~ /java/ || RUBY_VERSION >= '2.0.0'
     s.add_dependency 'io-console', '~> 0.3.0'
   end
